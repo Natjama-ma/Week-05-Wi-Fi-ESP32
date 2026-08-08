@@ -1,4 +1,4 @@
-# Install script for directory: D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/main
+# Install script for directory: D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

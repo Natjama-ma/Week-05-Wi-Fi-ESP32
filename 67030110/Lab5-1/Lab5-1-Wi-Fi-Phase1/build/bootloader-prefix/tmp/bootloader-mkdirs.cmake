@@ -10,18 +10,18 @@ if(NOT EXISTS "C:/Users/natja/esp/v5.5.1/esp-idf/components/bootloader/subprojec
   file(MAKE_DIRECTORY "C:/Users/natja/esp/v5.5.1/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/bootloader"
-  "D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix"
-  "D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/tmp"
-  "D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/src/bootloader-stamp"
-  "D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/src"
-  "D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/bootloader"
+  "D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix"
+  "D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/tmp"
+  "D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/src"
+  "D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/bootloader/bootloader.elf
+file D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/bootloader/bootloader.elf

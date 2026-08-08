@@ -1,4 +1,4 @@
-/* * Data converted from D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

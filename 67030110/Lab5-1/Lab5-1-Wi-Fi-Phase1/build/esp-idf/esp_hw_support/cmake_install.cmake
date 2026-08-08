@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
+  include("D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/IOT/Week-05-Wi-Fi-ESP32/Example_Codes/Lab5-1-Wi-Fi-Phase1/build/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
+  include("D:/IOT/Week-05-Wi-Fi-ESP32/67030110/Lab5-1/Lab5-1-Wi-Fi-Phase1/build/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
 endif()
 
