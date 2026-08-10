@@ -58,7 +58,7 @@ sequenceDiagram
 
 1. **Association ID (AID)** คืออะไร และมีประโยชน์อย่างไรต่อ Access Point ในการจัดการอุปกรณ์ไร้สาย?
 ~~~
-คือ: หมายเลขประจำตัวชั่วคราว (ID) ที่ Access Point (AP) ออกให้กับอุปกรณ์ไร้สายแต่ละเครื่องเมื่อเชื่อมต่อสำเร็จ
+คือ หมายเลขประจำตัวชั่วคราว (ID) ที่ Access Point (AP) ออกให้กับอุปกรณ์ไร้สายแต่ละเครื่องเมื่อเชื่อมต่อสำเร็จ
 ประโยชน์ต่อ AP
  - ใช้ระบุตัวตนและอ้างอิงอุปกรณ์แต่ละเครื่องได้อย่างรวดเร็ว
  - ช่วยจัดการการส่งข้อมูล และควบคุมโหมดประหยัดพลังงาน (Power Save Mode)
@@ -66,8 +66,5 @@ sequenceDiagram
 ~~~
 2. หาก Router รองรับอุปกรณ์ได้สูงสุด 32 เครื่อง และ ESP32 เป็นเครื่องที่ 33 พยายามจะเชื่อมต่อ จะเกิดเหตุการณ์ใดขึ้นใน Association Phase?
 ~~~
-ESP32 จะส่ง Association Request ไปขอเชื่อมต่อ ซึ่ง Router จะปฏิเสธการเชื่อมต่อ
-กลับมาด้วย Association Response ที่มีสถานะล้มเหลว เพราะทรัพยากร/AID เต็ม
- (Unable to handle additional associated stations) ทำให้การเชื่อมต่อล้มเหลว
-และ ESP32 จะได้รับ Event ตัดการเชื่อมต่อพร้อม Reason Code (เช่น WIFI_REASON_ASSOC_FAIL หรือ Code 203)
+ESP32 จะส่ง Association Request ไปขอเชื่อมต่อ ซึ่ง Router จะปฏิเสธการเชื่อมต่อกลับมาด้วย Association Response ที่มีสถานะล้มเหลว เพราะทรัพยากร/AID เต็ม(Unable to handle additional associated stations) ทำให้การเชื่อมต่อล้มเหลวและ ESP32 จะได้รับ Event ตัดการเชื่อมต่อพร้อม Reason Code (เช่น WIFI_REASON_ASSOC_FAIL หรือ Code 203)
 ~~~
