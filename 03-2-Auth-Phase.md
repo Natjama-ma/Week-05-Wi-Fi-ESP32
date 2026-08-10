@@ -57,4 +57,15 @@ sequenceDiagram
 ## 4. คำถามทบทวนความเข้าใจ (Checkpoints)
 
 1. ทำไมในเครือข่าย WPA2-PSK ขั้นตอน Auth Phase นี้ถึงผ่านได้แม้เราจะพิมพ์รหัสผ่านผิด?
+~~~
+เพราะใน WPA2-PSK ขั้นตอน Authentication เป็นเพียงการทักทายขั้นพื้นฐาน (Open System Authentication) ยังไม่มีการตรวจสอบรหัสผ่าน
+~~~
+
 2. หาก Router มีการเปิดใช้งาน **MAC Address Filtering** (อนุญาตเฉพาะอุปกรณ์ที่ลงทะเบียน MAC ไว้) ESP32 จะล้มเหลวที่ขั้นตอนใด และได้ Reason Code อะไร?
+~~~
+ขั้นตอนที่ล้มเหลว: Authentication Phase (หรือ Association Phase)
+เพราะ Router จะปฏิเสธไม่ยอมรับการลงทะเบียนของ MAC Address ที่ไม่มีในระบบตั้งแต่แรก
+
+Reason Code ที่ได้รับ
+WIFI_REASON_NOT_AUTHED (Code 6) หรือ WIFI_REASON_NOT_ASSOCED (Code 7)
+~~~
