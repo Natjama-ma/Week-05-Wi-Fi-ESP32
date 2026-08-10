@@ -89,4 +89,18 @@ void setup() {
 ## 5. คำถามทบทวนความเข้าใจ (Checkpoints)
 
 1. การสแกนแบบ **Active Scanning** กับ **Passive Scanning** ต่างกันอย่างไรในแง่ของปริมาณ Traffic บนอากาศและเวลาที่ใช้?
+~~~
+Active Scanning
+ - Traffic บนอากาศ: สูงกว่า เพราะอุปกรณ์ต้องส่งสัญญาณ Probe Request ออกไปถาม และรอให้ AP ส่ง Probe Response ตอบกลับ
+ - เวลาที่ใช้: เร็วกว่า (ได้ข้อมูล AP ทันที ไม่ต้องนั่งรอรอบการส่งสัญญาณ)
+
+Passive Scanning:
+ - Traffic บนอากาศ: ต่ำกว่าหรือไม่มีเลย เพราะอุปกรณ์แค่นั่งแอบฟังสัญญาณ Beacon frame ที่ AP กระจายออกมาตามรอบปกติ
+ - เวลาที่ใช้: ช้ากว่า (ต้องคอยเปลี่ยนช่องสัญญาณและแช่อยู่พักใหญ่เพื่อรอฟัง Beacon)
+~~~
+
 2. หาก ESP32 รองรับเฉพาะความถี่ 2.4GHz แต่เราพยายามเชื่อมต่อกับ Router 5GHz จะเกิด Event ใด และได้ Reason Code อะไร?
+~~~
+Event ที่เกิดขึ้น: WIFI_EVENT_STA_DISCONNECTED
+Reason Code: WIFI_REASON_NO_AP_FOUND (หรือ Code 201)
+~~~
